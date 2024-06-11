@@ -6,8 +6,18 @@ const BookGrid = ({
   myBookShelf,
   removeFromMyBookshelf,
 }) => {
+  // const isBookInShelf = (book) => {
+  //   return myBookShelf.some((shelfBook) => shelfBook.isbn[0] === book.isbn[0]);
+  // };
+
   const isBookInShelf = (book) => {
-    return myBookShelf.some((shelfBook) => shelfBook.isbn[0] === book.isbn[0]);
+    return myBookShelf.some((shelfBook) => {
+      return (
+        Array.isArray(shelfBook.isbn) &&
+        Array.isArray(book.isbn) &&
+        shelfBook.isbn[0] === book.isbn[0]
+      );
+    });
   };
 
   return (
