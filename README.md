@@ -70,6 +70,6 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 ## Contact
 
-- **Author**: Harharan
+- **Author**: Hariharan
 - **Email**: hariharanuv7@gmail.com
 - **GitHub**: [hari-bot](https://github.com/hari-bot)
