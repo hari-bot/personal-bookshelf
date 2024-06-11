@@ -7,14 +7,7 @@ const BookGrid = ({
   removeFromMyBookshelf,
 }) => {
   const isBookInShelf = (book) => {
-    return myBookShelf.some(
-      (shelfBook) =>
-        shelfBook.isbn &&
-        shelfBook.isbn[0] &&
-        book.isbn &&
-        book.isbn[0] &&
-        shelfBook.isbn[0] === book.isbn[0]
-    );
+    return myBookShelf.some((shelfBook) => shelfBook.isbn[0] === book.isbn[0]);
   };
 
   return (
